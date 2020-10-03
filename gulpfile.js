@@ -343,8 +343,12 @@ gulp.task('serve', gulp.series(
     'watch',
     () => {
       return gulp.src('build')
-        .pipe(webserver(opts.webserver()));
-    }
+        .pipe(webserver({
+          port: 8080,
+          livereload: true,
+          host: '0.0.0.0'
+        }));
+      }
   )
 ));
 
