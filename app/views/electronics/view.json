@@ -1,0 +1,10 @@
+{
+  "title": "Electronics",
+  "description": "Documentation revolving about hardware hacking and small tutorials about how to use sensors'n stuff.",
+  "logoUrl": "/electronics/electronics-logo.jpg",
+  "tags": ["electronics"],
+  "exclude": [
+    ".*-about$",
+    "^lang-.*"
+  ]
+}

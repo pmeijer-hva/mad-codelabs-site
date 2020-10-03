@@ -44,6 +44,9 @@ $color-tensorflow-orange: #ed8e24;
 $color-unity-grey: #222c37;
 $color-weave-green: #0f9d58;
 
+$color-beekeeping-yellow: #ffc107;
+$color-electronics-green: #009688;
+
 /* Mixins */
 
 @mixin codelab-card($categories, $color, $icon) {
@@ -199,3 +202,9 @@ $color-weave-green, 'weave.svg');
 
 @include codelab-card(['web'],
   $color-google-blue, 'web.svg');
+
+// Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+@include codelab-card(['beekeeping'],
+  $color-beekeeping-yellow, 'beehive.svg');
+@include codelab-card(['electronics'],
+  $color-electronics-green, 'electronics.svg');

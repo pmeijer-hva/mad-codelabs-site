@@ -1,0 +1,10 @@
+{
+  "title": "Beekeeping",
+  "description": "Introduction to the basics of beekeeping. Learn how to do hive inspections and to maintain the health of your bees.",
+  "logoUrl": "/beekeeping/beekeeping-logo.jpg",
+  "tags": ["beekeeping"],
+  "exclude": [
+    ".*-about$",
+    "^lang-.*"
+  ]
+}
