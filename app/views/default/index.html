@@ -99,7 +99,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div id="mainToolbar" class="paper-header">
       <div class="site-width layout horizontal">
         <a href="/">
-          <img src="/images/logo.png" class="logo-devs" alt="Codelabs Logo">
+          <img src="/images/hva_logo.png" class="logo-devs" alt="Codelabs Logo">
         </a>
         <div id="searchbar">
           <paper-input-container no-label-float>
@@ -116,17 +116,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <header id="banner" {% if view.id != 'default' -%}down{%- else %}down$="[[_toBoolean(selectedFilter)]]"{%- endif %}>
       <div class="site-width">
         {% if view.id == 'default' %}
-        <h2 class="banner-title">Welcome to Codelabs!</h2>
+        <h2 class="banner-title">Welcome to MAD!</h2>
         <div class="banner-description"
              data-filter-selected$="{% raw %}[[_toBoolean(selectedFilter)]]{% endraw %}">
           <p class="banner-info">
-            Codelabs provide a guided, tutorial, hands-on
-            coding experience. Most codelabs will step you through the process
-            of building a small application, or adding a new feature to an
-            existing application.
-            <br>
-            <a href="https://github.com/googlecodelabs/tools">Codelab tools on GitHub</a>
+            This site contains all the information about the MAD course. We have created step by step codelabs for all the apps in the course.
+            You can also use the drop down with "choose category" to find all sorts of other information about the course.
+            Also see the video below to learn more about the structure of the course.
+
+            <br><br>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/38vTWzMmLqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </p>
+        </div>
         {%- else -%}
           <div class="banner-description">
             <img id="logo" src="{{view.logoUrl}}" alt="Event logo">
@@ -153,7 +154,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         {% if view.id == 'default' %}
         <paper-dropdown-menu
-          label="Choose an event"
+          label="Choose a category"
           class="dropdown-filter"
           no-label-float
           noink no-animations
@@ -238,27 +239,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <footer id="footer">
       <div class="footer-wrapper site-width">
         <div class="link-list">
-          <label>Connect</label>
+          <label>Slack</label>
           <ul>
-            <li><a href="https://www.example.com/">Example</a></li>
+            <li><a href="https://mobiledevelopmenthva.slack.com/">Mobile channel</a></li>
           </ul>
         </div>
         <div class="link-list">
-          <label>Programs</label>
+          <label>Android</label>
           <ul>
-            <li><a href="https://www.example.com/">Example</a></li>
+            <li><a href="https://developer.android.com/index.html">Offical Android docs</a></li>
+            <li><a href="https://kotlinlang.org/docs/reference/">Offical Kotlin docs</a></li>
           </ul>
         </div>
         <div class="link-list">
-          <label>Developer Consoles</label>
+          <label>Material Design</label>
           <ul>
-            <li><a href="https://www.example.com/">Example</a></li>
+            <li><a href="https://material.io">Material Design Guidelines</a></li>
+            <li><a href="https://www.materialpalette.com/">Material Design Palette</a></li>
           </ul>
         </div>
         <div class="link-list">
-          <label>Explore</label>
+          <label>Background of the MAD course</label>
            <ul>
-            <li><a href="https://www.example.com/">Example</a></li>
+            <li><a href="https://dlnext.acm.org/doi/abs/10.1145/3279720.3279739">Course design</a></li>
           </ul>
         </div>
       </div>
@@ -267,9 +270,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="footerbar">
       <div class="site-width layout horizontal center justified">
         <span>
-          <a href="https://example.com">Terms</a>
-          &nbsp; | &nbsp;
-          <a href="https://example.com">Privacy</a>
+          &copy; Hogeschool van Amsterdam
         </span>
       </div>
     </div>

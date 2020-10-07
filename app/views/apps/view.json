@@ -1,0 +1,10 @@
+{
+  "title": "Apps",
+  "description": "All the codelabs for the apps per level!",
+  "logoUrl": "/apps/android_apps.jpg",
+  "tags": ["apps"],
+  "exclude": [
+    ".*-about$",
+    "^lang-.*"
+  ]
+}
