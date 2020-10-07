@@ -146,34 +146,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div id="filters" class="site-width layout horizontal center justified">
         <div id="sortby">
           <paper-tabs selected="0" noink on-iron-activate="sortBy">
-            <paper-tab>A-Z</paper-tab>
-            <paper-tab>Recent</paper-tab>
-            <paper-tab>Duration</paper-tab>
+<!--            <paper-tab>A-Z</paper-tab>-->
+<!--            <paper-tab>Recent</paper-tab>-->
           </paper-tabs>
         </div>
 
-        {% if view.id == 'default' %}
-        <paper-dropdown-menu
-          label="Choose a category"
-          class="dropdown-filter"
-          no-label-float
-          noink no-animations
-        >
-          <paper-listbox
-            id="eventList"
-            slot="dropdown-content"
-            class="dropdown-content"
-          >
-            {%- for view in views -%}
-              {%- if view.id != 'default' && !view.hidden -%}
-                <a href="/{{view.url}}/" tabindex="-1">
-                  <paper-item>{{view.title}}</paper-item>
-                </a>
-              {%- endif -%}
-            {%- endfor %}
-          </paper-listbox>
-        </paper-dropdown-menu>
-        {% endif %}
+<!--        {% if view.id == 'default' %}-->
+<!--        <paper-dropdown-menu-->
+<!--          label="Choose a category"-->
+<!--          class="dropdown-filter"-->
+<!--          no-label-float-->
+<!--          noink no-animations-->
+<!--        >-->
+<!--          <paper-listbox-->
+<!--            id="eventList"-->
+<!--            slot="dropdown-content"-->
+<!--            class="dropdown-content"-->
+<!--          >-->
+<!--            {%- for view in views -%}-->
+<!--              {%- if view.id != 'default' && !view.hidden -%}-->
+<!--                <a href="/{{view.url}}/" tabindex="-1">-->
+<!--                  <paper-item>{{view.title}}</paper-item>-->
+<!--                </a>-->
+<!--              {%- endif -%}-->
+<!--            {%- endfor %}-->
+<!--          </paper-listbox>-->
+<!--        </paper-dropdown-menu>-->
+<!--        {% endif %}-->
 
         {%- if showcats -%}
         <paper-dropdown-menu
