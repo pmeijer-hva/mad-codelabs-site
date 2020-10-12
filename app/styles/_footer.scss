@@ -64,6 +64,10 @@
   }
 }
 
+a.mail-pmeijer {
+    text-decoration: underline;
+}
+
 @media (max-width: $phone-breakpoint-max) {
   #footer {
     padding: $keyline*3 0;
