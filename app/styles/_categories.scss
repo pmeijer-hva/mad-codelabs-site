@@ -112,8 +112,10 @@ $color-google-blue, 'wear-os.svg');
 
 @include codelab-card(['gsuite', 'g-suite', 'apps'],
   $color-google-grey, 'gsuite.svg');
-@include codelab-card(['docs'],
+
+@include codelab-card(['manuals'],
   $color-google-blue, 'google-docs.svg');
+
 @include codelab-card(['drive'],
   $color-google-blue, 'google-drive.svg');
 @include codelab-card(['sheets'],
