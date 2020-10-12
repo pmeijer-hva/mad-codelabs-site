@@ -90,6 +90,10 @@ $color-electronics-green: #009688;
 
 @include codelab-card(['android', 'android-kotlin', 'android-tv'],
   $color-android-green, 'android.svg');
+
+@include codelab-card(['apps', 'android-kotlin', 'android-tv'],
+  $color-android-green, 'android.svg');
+
 @include codelab-card(['android-auto'],
   $color-android-auto-blue, 'android-auto.svg');
 @include codelab-card(['android-things'],
