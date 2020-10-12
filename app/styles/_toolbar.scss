@@ -62,6 +62,14 @@
   }
 }
 
+.intro-video, .go-to-manuals {
+    margin-top: $keyline * 2;
+}
+
+ .go-to-manuals a {
+    text-decoration:none;
+ }
+
 @media (min-width: $tablet-breakpoint-min) {
   #searchbar {
     background-color: $blueGrey600;

@@ -123,10 +123,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             This site contains all the information about the MAD course. We have created step by step codelabs for all the apps in the course.
             You can also use the drop down with "choose category" to find all sorts of other information about the course.
             Also see the video below to learn more about the structure of the course.
-
-            <br><br>
-            <iframe width="350" height="200" src="https://www.youtube.com/embed/38vTWzMmLqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <iframe class="intro-video" width="350" height="200" src="https://www.youtube.com/embed/38vTWzMmLqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <paper-button raised class="go-to-manuals"><a href="/manuals/" >Manuals</a></paper-button>
           </p>
+
         </div>
         {%- else -%}
           <div class="banner-description">
@@ -146,33 +148,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div id="filters" class="site-width layout horizontal center justified">
         <div id="sortby">
           <paper-tabs selected="0" noink on-iron-activate="sortBy">
-<!--            <paper-tab>A-Z</paper-tab>-->
-<!--            <paper-tab>Recent</paper-tab>-->
+            <paper-tab>A-Z</paper-tab>
+            <paper-tab>Recent</paper-tab>
           </paper-tabs>
         </div>
 
-<!--        {% if view.id == 'default' %}-->
-<!--        <paper-dropdown-menu-->
-<!--          label="Choose a category"-->
-<!--          class="dropdown-filter"-->
-<!--          no-label-float-->
-<!--          noink no-animations-->
-<!--        >-->
-<!--          <paper-listbox-->
-<!--            id="eventList"-->
-<!--            slot="dropdown-content"-->
-<!--            class="dropdown-content"-->
-<!--          >-->
-<!--            {%- for view in views -%}-->
-<!--              {%- if view.id != 'default' && !view.hidden -%}-->
-<!--                <a href="/{{view.url}}/" tabindex="-1">-->
-<!--                  <paper-item>{{view.title}}</paper-item>-->
-<!--                </a>-->
-<!--              {%- endif -%}-->
-<!--            {%- endfor %}-->
-<!--          </paper-listbox>-->
-<!--        </paper-dropdown-menu>-->
-<!--        {% endif %}-->
+        {% if view.id == 'default' %}
+        <paper-dropdown-menu
+          label="Choose a category"
+          class="dropdown-filter"
+          no-label-float
+          noink no-animations
+        >
+          <paper-listbox
+            id="eventList"
+            slot="dropdown-content"
+            class="dropdown-content"
+          >
+            {%- for view in views -%}
+              {%- if view.id != 'default' && !view.hidden -%}
+                <a href="/{{view.url}}/" tabindex="-1">
+                  <paper-item>{{view.title}}</paper-item>
+                </a>
+              {%- endif -%}
+            {%- endfor %}
+          </paper-listbox>
+        </paper-dropdown-menu>
+        {% endif %}
 
         {%- if showcats -%}
         <paper-dropdown-menu
@@ -269,7 +271,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="footerbar">
       <div class="site-width layout horizontal center justified">
         <span>
-          &copy; Hogeschool van Amsterdam
+          &copy; Hogeschool van Amsterdam - Developed by Pim Meijer &lt;<a href="mailto: p.meijer@hva.nl">p.meijer@hva.nl</a>&gt;
+
         </span>
       </div>
     </div>
