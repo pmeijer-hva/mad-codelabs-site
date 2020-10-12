@@ -110,7 +110,7 @@ $color-google-blue, 'wear-os.svg');
 @include codelab-card(['gsuite', 'g-suite'],
   $color-google-grey, 'gsuite.svg');
 
-@include codelab-card(['manuals', 'questions-resources'],
+@include codelab-card(['manuals', 'Questions and Resources'],
   $color-google-blue, 'google-docs.svg');
 
 @include codelab-card(['drive'],

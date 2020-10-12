@@ -62,13 +62,13 @@
   }
 }
 
-.intro-video, .go-to-manuals {
+.intro-video, .go-to-manuals-btn  {
     margin-top: $keyline * 2;
 }
 
- .go-to-manuals a {
-    text-decoration:none;
- }
+.go-to-manuals {
+    text-decoration: none!important;
+}
 
 @media (min-width: $tablet-breakpoint-min) {
   #searchbar {
