@@ -1,7 +1,7 @@
 {
   "title": "Manuals",
   "description": "Contains all the manuals. You can find information here about the program, assessments and course structure.",
-  "logoUrl": "/apps/android_apps.jpg",
+  "logoUrl": "/manuals/android_apps.jpg",
   "tags": ["manuals"],
   "exclude": [
     ".*-about$",
