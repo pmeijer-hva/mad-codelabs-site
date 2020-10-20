@@ -116,17 +116,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <header id="banner" {% if view.id != 'default' -%}down{%- else %}down$="[[_toBoolean(selectedFilter)]]"{%- endif %}>
       <div class="site-width">
         {% if view.id == 'default' %}
-        <h2 class="banner-title">Welcome to MAD!</h2>
+        <h2 class="banner-title">Welcome to MAD codelabs!</h2>
         <div class="banner-description"
              data-filter-selected$="{% raw %}[[_toBoolean(selectedFilter)]]{% endraw %}">
           <p class="banner-info">
-            This site contains all the information about the MAD course. We have created step by step codelabs for all the apps in the course.
-            You can also use the drop down with "choose category" to find all sorts of other information about the course.
-            Also see the video below to learn more about the structure of the course.
-            <br>
-            <iframe class="intro-video" width="350" height="200" src="https://www.youtube.com/embed/38vTWzMmLqc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
-            <a href="/manuals/" class="go-to-manuals"><paper-button raised class="go-to-manuals-btn">Manuals</paper-button></a>
+            This site contains all the codelabs for the apps within the MAD course. A codelab is an interactive tutorial which guides you
+            step by step by building an app. Besides the codelabs you'll also find questions&resources for each level.
+            <br><br> Good luck and have fun building these apps!
+<!--            <a href="/manuals/" class="go-to-manuals"><paper-button raised class="go-to-manuals-btn">Manuals</paper-button></a>-->
           </p>
 
         </div>
