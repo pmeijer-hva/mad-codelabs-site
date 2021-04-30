@@ -47,6 +47,10 @@ $color-weave-green: #0f9d58;
 $color-beekeeping-yellow: #ffc107;
 $color-electronics-green: #009688;
 
+$color-difficulty-bronze: #AF650B;
+$color-difficulty-silver: #C9C9C9;
+$color-difficulty-gold: #E5B725;
+
 /* Mixins */
 
 @mixin codelab-card($categories, $color, $icon) {
@@ -205,6 +209,18 @@ $color-weave-green, 'weave.svg');
 
 @include codelab-card(['web'],
   $color-google-blue, 'web.svg');
+
+//OOP1 cards
+
+@include codelab-card(['oop1-bronze'],
+        $color-difficulty-bronze, 'java.svg');
+
+@include codelab-card(['oop1-silver'],
+        $color-difficulty-silver, 'java.svg');
+
+@include codelab-card(['oop1-gold'],
+        $color-difficulty-gold, 'java.svg');
+
 
 // Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 @include codelab-card(['beekeeping'],
